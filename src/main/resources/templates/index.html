@@ -3,10 +3,19 @@
 <head>
     <title>calculator</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        h1 {text-align: center;}
+        h3 {text-align: center;}
+        p {text-align: center;}
+        form {text-align: center;}
+
+    </style>
 </head>
-<body bgcolor="#20BCE3">
+<body bgcolor="#325ea8">
 
 <h1>Basic Arithmetic Functions</h1>
+<h3>Number 1 on the left and Number 2 on the right</h3>
+<h3>Click the button to execute the function</h3>
 <form action="#" th:action="@{/calculator}" th:object="${operationModel}" method="POST">
     <input type="text" th:field="*{a}"/>
     <input type="text" th:field="*{b}"/>
