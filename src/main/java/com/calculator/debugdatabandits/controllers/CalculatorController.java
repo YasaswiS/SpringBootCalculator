@@ -38,6 +38,12 @@ public class CalculatorController {
         model.addAttribute("result", calculateSimple.multiply(operationModel));
         return "index";
     }
+    
+    @RequestMapping(value="/calculator", params="gcd", method = RequestMethod.POST)
+    public String gcd(@ModelAttribute("operationModel")  OperationModel operationModel, Model model ){
+        model.addAttribute("result", calculateSimple.gcd(operationModel));
+        return "index";
+    }
 
     @RequestMapping(value="/calculator", params="divide", method = RequestMethod.POST)
     public String divide(@ModelAttribute("operationModel")  OperationModel operationModel, Model model ){
