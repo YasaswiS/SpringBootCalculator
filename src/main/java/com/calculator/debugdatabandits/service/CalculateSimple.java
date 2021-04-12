@@ -12,8 +12,7 @@ public class CalculateSimple {
     }
     
     int gcd(OperationModel model){
-        public int a = model.getA();
-        public int b = model.getB();
+
 
     if (model.getA() == 0)
        return model.getB;
