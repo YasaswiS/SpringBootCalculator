@@ -15,18 +15,18 @@ public class CalculateSimple {
         public int a = model.getA();
         public int b = model.getB();
 
-    if (a == 0)
-       return b;
-    if (b == 0)
-       return a;
+    if (model.getA() == 0)
+       return model.getB;
+    if (model.getB == 0)
+       return model.getA();
   
 
-    if (a == b)
-        return a;
+    if (model.getA() == model.getB)
+        return model.getA();
   
-    if (a > b)
-        return gcd(a-b, b);
-    return gcd(a, b-a);
+    if (model.getA() > model.getB)
+        return gcd(model.getA()-model.getB, model.getB);
+    return gcd(model.getA(), model.getB-model.getA());
 }
 
     public int subtract(OperationModel model){
