@@ -10,23 +10,29 @@ public class CalculateSimple {
     public int add(OperationModel model){
         return model.getA() + model.getB();
     }
-    
+
     public int gcd(OperationModel model){
-
-
-    if (model.getA() == 0)
-       return model.getB();
-    if (model.getB() == 0)
-       return model.getA();
+        return gcd(model.getA(), model.getB());
+    }
+    
+    private int gcd(int a, int b)
+{
+    // Everything divides 0
+    if (a == 0)
+       return b;
+    if (b == 0)
+       return a;
   
-
-    if (model.getA() == model.getB())
-        return model.getA();
+    // base case
+    if (a == b)
+        return a;
   
-    if (model.getA() > model.getB())
-        return gcd(model.getA()-model.getB(), model.getB());
-    return gcd(model.getA(), model.getB()-model.getA());
+    // a is greater
+    if (a > b)
+        return gcd(a-b, b);
+    return gcd(a, b-a);
 }
+    
 
     public int subtract(OperationModel model){
         return model.getA() - model.getB();
