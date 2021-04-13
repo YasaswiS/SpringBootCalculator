@@ -17,8 +17,8 @@
 <h3>Number 1 on the left and Number 2 on the right</h3>
 <h3>Click the button to execute the function</h3>
 <form action="#" th:action="@{/calculator}" th:object="${operationModel}" method="POST">
-    <input type="text" th:field="*{a}"/>
-    <input type="text" th:field="*{b}"/>
+    <input type="text" value="0" th:field="*{a}"/>
+    <input type="text" value="0" th:field="*{b}"/>
     <p>
         <input type="submit" class="button" name="add" value="+"/>
         <input type="submit" class="button" name="subtract" value="-"/>
