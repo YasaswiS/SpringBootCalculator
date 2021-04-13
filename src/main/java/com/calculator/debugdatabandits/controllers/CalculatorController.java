@@ -18,7 +18,7 @@ public class CalculatorController {
     @RequestMapping("/calculator")
     public String getCalculatorPage(Model model){
         model.addAttribute("operationModel",operationModel);
-        model.addAttribute("result", 0);
+        model.addAttribute("result", calculateSimple.gcd(operationModel));
         return "index";
     }
 
