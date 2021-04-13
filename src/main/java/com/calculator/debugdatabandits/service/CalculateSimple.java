@@ -76,8 +76,8 @@ public class CalculateSimple {
     }
 
     public OperationModel clearSimple(OperationModel model){
-        model.setA(0);
-        model.setB(0);
+        model.setA(10);
+        model.setB(5);
         return model;
     }
 
