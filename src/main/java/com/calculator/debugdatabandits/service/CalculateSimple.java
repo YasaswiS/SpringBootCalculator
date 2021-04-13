@@ -80,6 +80,12 @@ public class CalculateSimple {
         model.setB(0);
         return model;
     }
+    
+    public OperationModel initialize(OperationModel model){
+        model.setA(10);
+        model.setB(5);
+        return model;
+    }
 
     public OperationModel clearAdvanced(OperationModel model){
         model.setC(0);
