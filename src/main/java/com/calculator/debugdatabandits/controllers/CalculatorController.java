@@ -19,7 +19,7 @@ public class CalculatorController {
     public String getCalculatorPage(Model model){
         model.addAttribute("operationModel", operationModel);
         model.addAttribute("operationModel",  calculateSimple.initialize(operationModel));
-        model.addAttribute("result", calculateSimple.gcd(operationModel));
+        model.addAttribute("result", calculateSimple.multiply(operationModel));
         return "index";
     }
 
