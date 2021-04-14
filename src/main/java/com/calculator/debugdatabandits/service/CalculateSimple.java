@@ -11,22 +11,22 @@ public class CalculateSimple {
         return model.getA() + model.getB();
     }
 
-    public int[] gcd(OperationModel model){
+    public long[] gcd(OperationModel model){
         return gcd(model.getA(), model.getB());
     }
     
-     private int[] gcd(int a, int b)
+     private long[] gcd(int a, int b)
 {
-         int startTime = System.nanoTime().intValue();
+         long startTime = System.nanoTime();
 
     if (a == 0)
-       return new int[] {b, System.nanoTime().intValue() - startTime};
+       return new long[] {Long.valueOf(b), System.nanoTime() - startTime};
     if (b == 0)
-       return new int[] {a, System.nanoTime().intValue() - startTime};
+       return new long[] {Long.valueOf(a), System.nanoTime() - startTime};
   
 
     if (a == b)
-        return new int[] {a, System.nanoTime().intValue() - startTime};
+        return new long[] {Long.valueOf(a), System.nanoTime()- startTime};
   
 
     if (a > b)
