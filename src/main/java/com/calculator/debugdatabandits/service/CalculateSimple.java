@@ -19,13 +19,13 @@ public class CalculateSimple {
 {
 
     if (a == 0)
-       return {b,1};
+       return new int[] {b,1};
     if (b == 0)
-       return {a,1};
+       return new int[] {a,1};
   
 
     if (a == b)
-        return {a,1};
+        return new int[] {a,1};
   
 
     if (a > b)
