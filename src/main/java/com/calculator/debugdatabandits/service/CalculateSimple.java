@@ -17,15 +17,16 @@ public class CalculateSimple {
     
      private int[] gcd(int a, int b)
 {
+         int startTime = System.nanoTime().intValue();
 
     if (a == 0)
-       return new int[] {b,1};
+       return new int[] {b, System.nanoTime().intValue() - startTime};
     if (b == 0)
-       return new int[] {a,1};
+       return new int[] {a, System.nanoTime().intValue() - startTime};
   
 
     if (a == b)
-        return new int[] {a,1};
+        return new int[] {a, System.nanoTime().intValue() - startTime};
   
 
     if (a > b)
