@@ -15,24 +15,21 @@ public class CalculateSimple {
         return gcd(model.getA(), model.getB());
     }
     
-    private int[] gcd(int a, int b){
-        long startTime = System.nanoTime();
+     private int gcd(int a, int b)
+{
 
     if (a == 0)
-       return {b, 1};
-  
+       return b;
     if (b == 0)
-       return {a, 1};
+       return a;
   
 
     if (a == b)
-        return {a, 1};
-   
+        return a;
   
 
     if (a > b)
         return gcd(a-b, b);
-    
     return gcd(a, b-a);
 }
     
