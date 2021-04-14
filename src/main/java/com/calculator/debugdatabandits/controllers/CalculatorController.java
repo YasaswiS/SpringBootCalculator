@@ -44,7 +44,7 @@ public class CalculatorController {
     @RequestMapping(value="/calculator", params="gcd", method = RequestMethod.POST)
     public String gcd(@ModelAttribute("operationModel")  OperationModel operationModel, Model model ){
         model.addAttribute("result", calculateSimple.gcd(operationModel)[0]);
-        model.addAttribute("time", calculateSimple.gcd(operationModel)[1])
+        model.addAttribute("time", calculateSimple.gcd(operationModel)[1]);
         return "index";
     }
 
