@@ -20,15 +20,18 @@ public class CalculateSimple {
 
     if (a == 0){
         long finalTime = System.nanoTime() - startTime;
-       return {b, finalTime};}
+       return {b, finalTime};
+    }
     if (b == 0){
        long finalTime = System.nanoTime() - startTime;
-       return {a, finalTime};}
+       return {a, finalTime};
+    }
   
 
     if (a == b){
         long finalTime = System.nanoTime() - startTime;
-        return {a, finalTime};}
+        return {a, finalTime};
+    }
   
 
     if (a > b){
