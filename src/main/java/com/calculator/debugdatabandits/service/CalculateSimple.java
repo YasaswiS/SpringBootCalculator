@@ -18,24 +18,20 @@ public class CalculateSimple {
     private int[] gcd(int a, int b){
         long startTime = System.nanoTime();
 
-    if (a == 0){
-
+    if (a == 0)
        return {b, 1};
-    }
-    if (b == 0){
-       
+  
+    if (b == 0)
        return {a, 1};
-    }
   
 
-    if (a == b){
-      
+    if (a == b)
         return {a, 1};
-    }
+   
   
 
-    if (a > b){
-        return gcd(a-b, b);}
+    if (a > b)
+        return gcd(a-b, b);
     
     return gcd(a, b-a);
 }
