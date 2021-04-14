@@ -19,18 +19,18 @@ public class CalculateSimple {
         long startTime = System.nanoTime();
 
     if (a == 0){
-        long finalTime = System.nanoTime() - startTime;
-       return {b, finalTime};
+
+       return {b, 1};
     }
     if (b == 0){
-       long finalTime = System.nanoTime() - startTime;
-       return {a, finalTime};
+       
+       return {a, 1};
     }
   
 
     if (a == b){
-        long finalTime = System.nanoTime() - startTime;
-        return {a, finalTime};
+      
+        return {a, 1};
     }
   
 
