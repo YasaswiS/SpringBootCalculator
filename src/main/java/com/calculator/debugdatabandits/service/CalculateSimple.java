@@ -15,17 +15,17 @@ public class CalculateSimple {
         return gcd(model.getA(), model.getB());
     }
     
-     private int gcd(int a, int b)
+     private int[] gcd(int a, int b)
 {
 
     if (a == 0)
-       return b;
+       return {b,1};
     if (b == 0)
-       return a;
+       return {a,1};
   
 
     if (a == b)
-        return a;
+        return {a,1};
   
 
     if (a > b)
